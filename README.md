@@ -4,35 +4,30 @@
   <meta charset="UTF-8">
 </head>
 <body>
-  <h1>AgendeMe - API RESTful de Agenda Telefônica</h1>
-  
-  <h2>Recursos e Funcionalidades Principais</h2>
+  <h1>AgendeMe - Phonebook RESTful API</h1>
+  <h2>Main Features and Functionality</h2>
   <ul>
-    <li>Autenticação JWT</li>
-    <li>Operações CRUD</li>
+    <li>JWT Authentication</li>
+    <li>CRUD Operations</li>
     <li>Entity Framework</li>
-    <li>Registro de Usuários</li>
-    <li>Validação de Dados</li>
-    <li>Gerenciamento de Relacionamento</li>
+    <li>User Registration</li>
+    <li>Data Validation</li>
+    <li>Relationship Management</li>
   </ul>
-  
-  <h2>Instruções de Uso</h2>
+  <h2>Usage Instructions</h2>
   <ol>
-    <li>Clone este repositório em sua máquina local.</li>
-    <li>Certifique-se de ter o .NET 6 SDK instalado.</li>
-    <li>Configure a conexão com o banco de dados no arquivo <code>appsettings.json</code>.</li>
-    <li>Execute as migrações do Entity Framework: <code>dotnet ef migrations add InitialCreate</code>.</li> em seguida <code>dotnet ef database update</code>.</li>
-    <li>Compile e execute a aplicação: <code>dotnet run</code>.</li>
-    <li>Acesse a API através do endpoint base: <code>http://localhost:5000/api/</code>.</li>
-    <li>Utilize uma ferramenta como o Postman para realizar as requisições HTTP.</li>
+    <li>Clone this repository to your local machine.</li>
+    <li>Make sure you have the .NET 6 SDK installed.</li>
+    <li>Configure the database connection in the <code>appsettings.json</code> file.</li>
+    <li>Run the Entity Framework migrations: <code>dotnet ef migrations add InitialCreate</code>, then <code>dotnet ef database update</code>.</li>
+    <li>Build and run the application: <code>dotnet run</code>.</li>
+    <li>Access the API through the base endpoint: <code>http://localhost:5000/api/</code>.</li>
+    <li>Use a tool like Postman to make HTTP requests.</li>
   </ol>
-  
-  <h2>Contribuição</h2>
-  <p>Contribuições são bem-vindas! Abra um Pull Request para enviar suas melhorias.</p>
-  
-  <h2>Contato</h2>
-  <p>Entre em contato pelo e-mail <a href="mailto:cairomaranzatto.jau@gmail.com">cairomaranzatto.jau@gmail.com</a> para qualquer dúvida ou sugestão.</p>
-  
-  <p>Agradecemos por visitar o repositório AgendeMe!</p>
+  <h2>Contribution</h2>
+  <p>Contributions are welcome! Open a Pull Request to submit your improvements.</p>
+  <h2>Contact</h2>
+  <p>Feel free to contact us via email at <a href="mailto:cairomaranzatto.jau@gmail.com">cairomaranzatto.jau@gmail.com</a> for any questions or suggestions.</p>
+  <p>Thank you for visiting the AgendeMe repository!</p>
 </body>
 </html>
