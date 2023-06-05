@@ -27,7 +27,7 @@
   <h2>Contribution</h2>
   <p>Contributions are welcome! Open a Pull Request to submit your improvements.</p>
   <h2>Contact</h2>
-  <p>Feel free to contact us via email at <a href="mailto:cairomaranzatto.jau@gmail.com">cairomaranzatto.jau@gmail.com</a> for any questions or suggestions.</p>
+  <p>Feel free to contact us via email at <a href="mailto:cairomaranzatto.jau@gmail.com">cairomaranzatto.jau@gmail.com</a> for any questions, or visit my LinkedIn profile: <a href="https://www.linkedin.com/in/cairo-maranzatto-987835206">Cairo Maranzatto</a>.</p>
   <p>Thank you for visiting the AgendeMe repository!</p>
 </body>
 </html>
