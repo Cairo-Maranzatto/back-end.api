@@ -1,4 +1,6 @@
 using AgendeMe.Data.Context;
+using AgendeMe.Data.Entity;
+using AgendeMe.Data.Repository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -12,6 +14,9 @@ ConfigurationManager configuration = builder.Configuration;
 
 // For Entity Framework
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("connMSSQL")));
+
+builder.Services.AddScoped<IRepository<ClienteEntity>, Repository<ClienteEntity>>();
+builder.Services.AddScoped<IRepository<ClienteTelefoneEntity>, Repository<ClienteTelefoneEntity>>();
 
 // For Identity
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()

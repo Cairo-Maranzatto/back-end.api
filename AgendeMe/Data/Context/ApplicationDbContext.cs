@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace AgendeMe.Data.Context
 {
@@ -16,12 +17,25 @@ namespace AgendeMe.Data.Context
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            base.OnModelCreating(builder);
 
             builder.Entity<ClienteEntity>()
                 .HasIndex(c => c.Email)
                 .IsUnique();
 
-            base.OnModelCreating(builder);
+            builder.Entity<ClienteTelefoneEntity>(ConfigureClienteTelefoneEntity);
+        }
+
+        private void ConfigureClienteTelefoneEntity(EntityTypeBuilder<ClienteTelefoneEntity> builder)
+        {
+            builder.HasKey(ct => ct.Id);
+            builder.Property(ct => ct.ClienteId).IsRequired();
+            builder.Property(ct => ct.Descricao).IsRequired();
+            builder.Property(ct => ct.Numero).IsRequired().HasMaxLength(20);
+
+            builder.HasOne(ct => ct.Cliente)
+                .WithMany(c => c.ClienteTelefones)
+                .HasForeignKey(ct => ct.ClienteId);
         }
     }
 }
